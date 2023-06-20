@@ -2,23 +2,32 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className="navbar">
-      <div class="navbarcon">
-        <div class="top">
-          <div class="nav-left">
-            <a href="#home" class="navbarlogo py-6">
-              ngedeppp
-            </a>
+      <div className="navbarcon">
+        <div className="top">
+          <div className="nav-left">
+            <div className="navbarlogo py-6">ngedeppp</div>
           </div>
-          <div class="position">
-            <div class="nav">
-              <div class="group nav-menu">
+          <div className="position">
+            <div className="nav">
+              <div className="group nav-menu">
                 <Link to="/">
-                  <a>Home</a>
+                  <div style={{ marginLeft: "2rem", marginRight: "2rem" }}>
+                    Home
+                  </div>
                 </Link>
               </div>
-              <div class="group nav-menu">
+              <div className="group nav-menu">
                 <Link to="/projects">
-                  <a>Projects</a>
+                  <div style={{ marginLeft: "2rem", marginRight: "2rem" }}>
+                    Projects
+                  </div>
+                </Link>
+              </div>
+              <div className="group nav-menu">
+                <Link to="https://dnea07.github.io/portfolio-devina-nathania/">
+                  <div style={{ marginLeft: "2rem", marginRight: "2rem" }}>
+                    Portfolio
+                  </div>
                 </Link>
               </div>
             </div>

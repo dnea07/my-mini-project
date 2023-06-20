@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaPaintBrush } from "react-icons/fa";
 const Sidebar = (props) => {
@@ -8,7 +8,7 @@ const Sidebar = (props) => {
   };
 
   return (
-    <div className="d-flex flex-row">
+    <div className="full">
       <div style={{ width: isOpen ? "300px" : "50px" }} className="sidebar">
         <div className="top-section" onClick={() => toggle()}>
           <h1 style={{ display: isOpen ? "block" : "none" }} className="logo">
@@ -92,7 +92,7 @@ const Sidebar = (props) => {
           </div>
         </div>
       </div>
-      <main>{props.children}</main>
+      <main className="main">{props.children}</main>
     </div>
   );
 };

@@ -63,7 +63,7 @@
   align-self: flex-end;
 }
 
-.group > a {
+.group > Link {
   color: rgb(164, 70, 253);
   font-weight: 500;
   font-size: 1rem;
@@ -77,15 +77,23 @@
 /* NAVBAR STYLE END */
 
 /* SIDEBAR STYLE START */
+.full {
+  display: flex;
+  flex-direction: row;
+}
 .sidebar {
-  background: #ffe5b4;
-  color: #f96c08;
+  background: rgb(227, 198, 255);
+  color: rgb(164, 70, 253);
   height: 100%;
   min-height: 100vh;
   transition: all 0.5s;
   font-size: 20px;
   position: sticky;
   top: 60px;
+}
+
+.logo {
+  font-size: medium;
 }
 
 .bars {
@@ -102,7 +110,7 @@
 
 .link {
   display: flex;
-  color: #f96c08;
+  color: rgb(164, 70, 253);
   padding: 10px 15px;
   gap: 15px;
   transition: all 0.5s;
@@ -110,7 +118,7 @@
   cursor: pointer;
 }
 .link:hover {
-  background: #f96c08;
+  background: rgb(164, 70, 253);
   color: white;
   transition: all 0.5s;
   cursor: pointer;
@@ -118,7 +126,7 @@
 
 .linkselected {
   display: flex;
-  background: #f96c08;
+  background: rgb(164, 70, 253);
   color: white;
   padding: 10px 15px;
   gap: 15px;
@@ -154,3 +162,34 @@ main {
 }
 
 /* SIDEBAR STYLE END */
+/* HOMEPAGE STYLE START */
+.home-background {
+  /* background-color: rgb(255, 215, 215); */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* HOMEPAGE STYLE END */
+/* FOOTER STYLE START */
+.footer {
+  width: 100vw;
+  position: absolute;
+  top: 100%;
+  background-color: rgb(238, 220, 255);
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer-credit {
+  opacity: 0.8;
+  text-align: center;
+  background-color: rgb(234, 209, 244);
+}
+/* FOOTER STYLE END */

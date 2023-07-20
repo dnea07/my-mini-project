@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaPaintBrush } from "react-icons/fa";
+import { BsFillStickiesFill } from "react-icons/bs";
 const Sidebar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
@@ -31,6 +32,15 @@ const Sidebar = (props) => {
                 className="link_text"
               >
                 Paint
+              </div>
+            </Link>
+            <Link to="/carousel" className="link">
+              <BsFillStickiesFill />
+              <div
+                style={{ display: isOpen ? "block" : "none" }}
+                className="link_text"
+              >
+                Carousel
               </div>
             </Link>
             {/* <div>

@@ -8,8 +8,8 @@ import Footer from "./components/Footer";
 
 // IMPORT PAGES
 import Home from "./pages/Home";
-import Paint from "./pages/Paint";
 import NotFound from "./pages/NotFound";
+import Paint from "./pages/PaintPage";
 
 function App() {
   return (
